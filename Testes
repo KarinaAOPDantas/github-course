@@ -1,0 +1,28 @@
+Arquivo teste para curso GIT 
+
+Arquivo da aula para iniciantes....
+
+Sttus lifecycle
+
+
+untracked		
+Não marcado (momento em que o arquivo é adicionado no repositorio, mas ainda não foi visto pelo git)
+ainda não há versão desse arquivo
+
+
+unmodified	
+não modificado, ele existe no git mas não teve nenhum modificação
+
+modified	
+quando modifica o arquivo
+
+
+staged  
+momento em que o arquivo vai ficar sendo avisada que no momento que a ersão for fechada leva esse arquivo
+
+
+
+Para no momento que for realizado o commit (ou seja criada uma versão) todos os arquivos voltar a ficar unmodified
+
+
+Teste alteração arquivo....
