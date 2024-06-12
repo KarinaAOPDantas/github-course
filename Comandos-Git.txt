@@ -133,10 +133,9 @@ Para mandar dados da master local para origin remota usa-se
 	
 Para atualizar a local com dados da origin remota usa-se 
 
-	git pull origin master ou master origin
+	git pull origin master 
 
 
 
-
-
+		
 
