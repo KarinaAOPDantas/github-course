@@ -1,0 +1,133 @@
+Revisando o git: 
+
+comando gits de configuração:
+
+Para incluir os dados do usuario:
+	git config --global user.name "Nome do resp."
+	git config --global user.email "email@email.com"
+
+
+Para consultar os dados inclusos: 
+	git config user.name ou git config user.email
+
+ou para consultar todos os configs:
+	git config --list
+
+
+Comandos de inicialização do repositório onde serão guardados os arquivos do projeto:
+
+Para criar uma pasta para o projeto : 
+	mkdir git-course
+
+para entrar na pasta:
+	cd git-course
+
+Para inicializar um repositorio para que faça parte do ecossistema do git:
+
+	git init (ira ser responsavel por inicializar o repositório e ficar enxergando todas as mudanças que tiverem dentro desse projeto)
+	
+Para acessar o diretorio: Ao inicializar um novo repositorio é criado um diretorio .git, para acessa-lo pelo terminal usa-se o comando
+	cd .git
+
+Para visualizar o que há dentro de uma pasta ou diretório:
+	dir .git ou dir .git-course ou apenas dir(caso vc ja esteja dentro da pasta desejada e que ver quais arquivos estao nela)
+
+Para sair do diretorio:
+	cd ..
+	
+
+##Ciclo de vida dos estados dos arquivos:
+
+Untracked - Não marcado - Momento em que arquivo acabou de ser adicionado no repositorio, mas ainda não ha nenhuma versão desse arquivo no git..
+Depois de adicionar esse arquivo no git
+
+Unmodified - Não modificado - Ele existe no git mas não foi modificado
+
+Modified - Modificado - Quando é editado um arquivo
+
+Staged - Areá onde será criada a versão para commit - 
+
+
+
+Comando para verificar como esta o repositório neste momento:
+
+	git status
+	
+Comando para adicionar novo arquivo no repositorio 
+
+	git add nome arquivo
+	
+Comando para criar commit - Commit é o momento que vc informar ao git que deseja criar uma imagem do repositório atual 
+
+	git commit -m "mensagem"
+	
+
+sempre que for realizada uma edição do arquivo é necessario adicionar  esta modificação (git add nome arquivo) para depois conseguir realizar commit (git commit -m "mensagem")
+
+Utilizando uma IDE como intellij é necessario realizar o commit e o push em seguida 
+
+
+Comando para exibir o log dos commit, apresentando uma Hash, o nome de quem executou o commit, email, data
+
+	git log
+
+	git log --decorate
+
+	git shortlog
+
+	git log --author="Karina"
+
+	git log --graph
+
+	git show - exibe no terminal as mudanças adicionadas pelos commits, passandando o hash exibe os detalhes do commit especifico
+
+
+Comando que permite ver as mudanças antes mesmo de add alteração e enviar o commit
+	git diff
+	
+	git diff --name-only  - é possíve verificar a lista do nome dos arquivos que sofreram modificações
+	
+	
+Quando possui um arquivo que ja foi adicionado ao repositorio, mas sofreu alteração e vc precisa realizar commit pode utilizar o comando
+
+	git commit -am "mensagem"
+	
+
+	
+Para voltar a alguns historicos, é possivel utilizar o comando
+	git reset
+	
+
+Ligando o repositorio local com o remoto
+	git remote add origin git@github.com:karinaaopdantas/github-course.git
+		o comando "git remote" mostra que esta conectado a origin
+		o comando git remote -v traz mais informações
+		
+	em seguida deve ser feito o push levando o que ta na Master (local) para a Origin(remoto)
+		git push -u origin master 
+
+pode haver problema devido as chaves para autenticar coneção com repositorio remoto, deve ser realizada a criação das chaves seguindo os seguintes comandos
+
+	ssh-keygen -t rsa -b 4096 -C "seu email"  ---	vai apertando enter, ate finalizar com sucesso.
+	
+	para capturar a chave pelo terminal precisa retornar a pasta anterior ao repositorio, acessando a pasta atraves 
+	cd .ssh
+	
+	depois da um "dir" para listar os arquivos contidos no diretorio
+	
+	identifica o arquivo id_rsa.pub
+	e da o comando para exibir a chave : type id_rsa.pub
+	
+	ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDcYeX/s1lRpD44uVvLXqKvR96PFAp61WdRKyEZYr/XQSzfEo5BGEShKTtomnR1VT3D4pkndMwfRrt+YoUcvtg8ShBpPzoUEV/65JTi6oMnqRTC2H/98LUfYdb12rCR3H4TD/ynDJPQOLlrOlsTjYcpkOBB/SaNw/ND7Wi/grZ9hOZOsW0Y94qlLmdH3xmAw93wweP4334QYJZFG+sSX5PqSQPGN2lZL+DfxqzTJPdTUYyctGQUdAussRV5NgLnY5oyRRmfuz8u5zoNSCsgOYuVSIWINoD033nTicYXwDByBzng6zxgw/uW525Enc3G866NbRAEBdmfy1tWjgVoZZ/F3p0Dl3Ovi6fdq4puhsYt7Xt3vLrPUk3JGQpLkou68DonxnN86uNKWgZMQq/mEQfdoK9UyJd9QYx8DCc04D48oDEN6buc+i+7VrTvp6c3yyA9/l0C/GrhToLctbrHMNevy7DqvcH9RmGfSD+OKJdzn7YkA4Fg38uRcGC2airu8ZuwHjiz1FfW3qy6iyFDxOGf6bcm83dsD7h62BaHG8syOfO+eIeojM5zoMlFtyPFs1ZzzZu4rlcLw6QeShR4wuVgc0WuA698z45Gq+WoaCfZibzApAIwTdTvmK2QqGUg0jXqDXRL8poou/QHVM2jecW7/ZKHyMOUR7pdwBpHMqhk9w== karina.aopdantas@gmail.com
+	
+	
+
+	
+
+
+
+
+
+
+
+
