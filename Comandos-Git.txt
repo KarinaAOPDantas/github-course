@@ -123,8 +123,17 @@ pode haver problema devido as chaves para autenticar coneção com repositorio r
 	
 
 	
+Comando que permite clonar um repositorio remoto :
+	
+	git clone (informar o ssh ou https do github do repositório)
+	
 
+Para mandar dados da master local para origin remota usa-se
+	git push origin master
+	
+Para atualizar a local com dados da origin remota usa-se 
 
+	git pull origin master
 
 
 
