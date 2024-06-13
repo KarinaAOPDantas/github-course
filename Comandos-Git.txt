@@ -136,6 +136,21 @@ Para atualizar a local com dados da origin remota usa-se
 	git pull origin master 
 
 
+Comando para criar uma branch
+
+	git checkout -b
+	
+	
+	git branch é o comando que mostra as branchs existentes
+	
+Comando para navegar entre os branches
+
+	git checkout nome da branch que deseja trabalhar
+	
+Comando para apagar branch 
+	git branch -D e o nome da branch 
+	
+	
 
 		
 
