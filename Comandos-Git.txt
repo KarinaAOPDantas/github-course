@@ -156,3 +156,5 @@ Comandos para unir branch
 
 		
 Testar atualização na branch testes
+
+Teste git pull master Testes
