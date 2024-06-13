@@ -120,7 +120,6 @@ pode haver problema devido as chaves para autenticar coneção com repositorio r
 	
 	ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDcYeX/s1lRpD44uVvLXqKvR96PFAp61WdRKyEZYr/XQSzfEo5BGEShKTtomnR1VT3D4pkndMwfRrt+YoUcvtg8ShBpPzoUEV/65JTi6oMnqRTC2H/98LUfYdb12rCR3H4TD/ynDJPQOLlrOlsTjYcpkOBB/SaNw/ND7Wi/grZ9hOZOsW0Y94qlLmdH3xmAw93wweP4334QYJZFG+sSX5PqSQPGN2lZL+DfxqzTJPdTUYyctGQUdAussRV5NgLnY5oyRRmfuz8u5zoNSCsgOYuVSIWINoD033nTicYXwDByBzng6zxgw/uW525Enc3G866NbRAEBdmfy1tWjgVoZZ/F3p0Dl3Ovi6fdq4puhsYt7Xt3vLrPUk3JGQpLkou68DonxnN86uNKWgZMQq/mEQfdoK9UyJd9QYx8DCc04D48oDEN6buc+i+7VrTvp6c3yyA9/l0C/GrhToLctbrHMNevy7DqvcH9RmGfSD+OKJdzn7YkA4Fg38uRcGC2airu8ZuwHjiz1FfW3qy6iyFDxOGf6bcm83dsD7h62BaHG8syOfO+eIeojM5zoMlFtyPFs1ZzzZu4rlcLw6QeShR4wuVgc0WuA698z45Gq+WoaCfZibzApAIwTdTvmK2QqGUg0jXqDXRL8poou/QHVM2jecW7/ZKHyMOUR7pdwBpHMqhk9w== karina.aopdantas@gmail.com
 	
-	
 
 	
 Comando que permite clonar um repositorio remoto :
@@ -141,7 +140,7 @@ Comando para criar uma branch
 	git checkout -b
 	
 	
-	git branch é o comando que mostra as branchs existentes
+	git branch -  é o comando que mostra as branchs existentes
 	
 Comando para navegar entre os branches
 
@@ -150,7 +149,10 @@ Comando para navegar entre os branches
 Comando para apagar branch 
 	git branch -D e o nome da branch 
 	
+Comandos para unir branch
+	Merge:git merge (nome da branch que vc vai mergear)
 	
+	Rebase: 
 
 		
 
